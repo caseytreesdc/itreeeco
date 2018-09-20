@@ -7,12 +7,12 @@
 	<title>iTree Ecosystem Analysis 2015</title>
 	<!-- Google Tag Manager -->
 	<script>(function (w, d, s, l, i) {
-		w[l] = w[l] || []; w[l].push({
-			'gtm.start':
-				new Date().getTime(), event: 'gtm.js'
-		}); var f = d.getElementsByTagName(s)[0],
-			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-				'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
 		})(window, document, 'script', 'dataLayer', 'GTM-M8ZW2J');</script>
 	<!-- End Google Tag Manager -->
 	<style>
@@ -34,6 +34,11 @@
 			margin: 0 auto;
 			position: relative;
 		}
+
+		a { text-decoration: none;
+			color: #fbaf3f;
+			font-weight: 400;
+			}
 
 		h1 {
 			margin: 0 0 1em 0;
@@ -158,13 +163,13 @@
 		section.main {
 			margin-top: 30px;
 			background: url(images/treesgeo.png) repeat-x bottom;
-			background-size: 120%;
+			background-size: 55%;
 		}
 
 		section.main aside .intro {
-			max-width: 550px;
+			max-width: 600px;
 			margin: 60px auto 0;
-			padding-bottom: 12%;
+			padding: 2% 12% 8% 12%;
 			text-align: center;
 			line-height: 1.8em;
 		}
@@ -247,6 +252,7 @@
 		section.row-carbon p {
 			color: #fff;
 			line-height: 1.4em;
+			text-align: left;
 		}
 
 		section.row-carbon {
@@ -454,6 +460,7 @@
 		section.row-air p {
 			color: #fff;
 			line-height: 1.4em;
+			text-align: left;
 		}
 
 		section.row-air {
@@ -592,7 +599,7 @@
 
 		section.row-filter {
 			background-color: #75ceaf;
-			padding: 70px;
+			padding: 70px 30px;
 		}
 
 		section.row-filter h2 {
@@ -636,7 +643,7 @@
 		section.row-filter aside {}
 
 		section.row-filter aside .content.paragraph {
-			padding: 2em 3em 0;
+			padding: 2em 0;
 			max-width: 600px;
 			margin: 0 auto;
 			text-align: left;
@@ -647,7 +654,7 @@
 		/* Section - Row Pollution Removal */
 
 		section.row-pollution-removal {
-			padding: 70px;
+			padding: 70px 30px;
 		}
 
 		section.row-pollution-removal h2 {
@@ -669,6 +676,7 @@
 			color: #000;
 			text-align: center;
 			text-transform: none;
+			text-align: left;
 		}
 
 		section.row-pollution-removal hr {
@@ -687,7 +695,7 @@
 		section.row-pollution-removal aside {}
 
 		section.row-pollution-removal aside .content.paragraph {
-			padding: 2em 3em 0;
+			padding: 2em 0;
 			max-width: 600px;
 			margin: 0 auto;
 			text-align: left;
@@ -711,7 +719,10 @@
 		section.row-stormwater p {
 			color: #fff;
 			line-height: 1.4em;
+			text-align: left;
 		}
+
+
 
 		section.row-stormwater {
 			background-size: 20px;
@@ -916,7 +927,7 @@
 		section.row-what-can-you-do {
 			margin-top: 30px;
 			background: url(images/treesgeo.png) repeat-x bottom;
-			background-size: 120%;
+			background-size: 55%;
 		}
 
 		section.row-what-can-you-do aside {
@@ -957,7 +968,7 @@
 
 		section.row-methodology {
 			background-color: #fff;
-			padding: 70px 0 45px;
+			padding: 70px 30px 45px;
 		}
 
 		section.row-methodology aside .content.paragraph {
@@ -1105,6 +1116,25 @@
 				float: none;
 				text-align: center;
 			}
+			section.main {
+				background-size: 100%;
+			}
+			section.row-what-can-you-do {
+				background-size: 100%;
+			}
+			section.row-carbon p {
+				padding: 0 1em;
+			}
+			section.row-stormwater p {
+				padding: 0 1em;
+			}
+			section.row-air p {
+				padding: 0 1em;
+			}
+			p,
+			ul {
+				font-size: 1.2em;
+			}
 		}
 
 		/* Media Screens - 400px */
@@ -1113,6 +1143,10 @@
 
 			section.row-composition {
 				padding: 0;
+			}
+
+			header {
+				padding-bottom: 0;
 			}
 		}
 	</style>
@@ -1251,12 +1285,15 @@
 		<section class="main">
 			<aside>
 				<div class="intro">
-					<p>Trees provide enormous benefits to human health and the environment. Those natural woody plants standing tall on our
+					<p style="text-align: left;">Trees provide enormous benefits to human health and the environment. Those natural woody plants standing tall on our
 						streets, in our parks and in our yards filter air pollution, remove carbon dioxide, produce oxygen, absorb stormwater,
-						provide shade, reduce human stress and increase concentration. i-Tree Ecosystem Analysis reveals the structure, function and value of urban forests.</p>
+						provide shade, reduce human stress and increase concentration. The data for this report comes from <a href="https://www.itreetools.org/about.php" target="_blank">i-Tree</a>, which is a suite of tools from the <a href="https://www.fs.fed.us/" target="_blank">USDA Forest
+						Service</a> that is designed to use field data from tree inventories along with local hourly air pollution and meteorological
+						data to reveal the structure, function and value of urban forests.</p>
 				</div>
 			</aside>
 		</section>
+		<a href="#carbonstorage">
 		<section class="row-howdotreeshelp">
 			<h1>How Do Trees Help?</h1>
 			<aside>
@@ -1266,6 +1303,8 @@
 						<p class="small">Trees remove carbon dioxide that causes climate change</p>
 				</div>
 			</aside>
+		</a>
+			<a href="#stormwater">
 			<aside>
 				<div class="content stormwater">
 					<h3>Stormwater</h4>
@@ -1273,6 +1312,8 @@
 						<p class="small">Trees reduce stormwater runoff making our rivers less polluted</p>
 				</div>
 			</aside>
+		</a>
+		<a href="#airquality">
 			<aside>
 				<div class="content air-quality">
 					<h3>Air Quality</h4>
@@ -1280,8 +1321,10 @@
 						<p class="small">Trees remove harmful pollution and improve public health</p>
 				</div>
 			</aside>
+		</a>
 		</section>
 		<!--beginning of carbon-->
+		<a name="carbonstorage"></a>
 		<section class="row-carbon">
 			<aside>
 				<div class="content">
@@ -1327,6 +1370,7 @@
 		</div>
 		<!--end of carbon-->
 		<!--beginning of stormwater-->
+		<a name="stormwater"></a>
 		<section class="row-stormwater">
 			<aside>
 				<div class="content">
@@ -1417,6 +1461,7 @@
 		</div>
 		<!--end of stormwater-->
 		<!--beginning of airquality-->
+		<a name="airquality"></a>
 		<section class="row-air">
 			<aside>
 				<div class="content">
@@ -1661,13 +1706,13 @@
 			</section>
 		</div>
 		<!--end of forest composition-->
-		<img src="images/treeinventory3-1.jpg" width="100%">
+
 		<section class="row-what-can-you-do">
 			<br>
 			<h1>More Resources</h1>
 			<br>
 			<br>
-			<a href="http://caseytrees.org/wp-content/uploads/2017/03/iTree-2015-Report_English.pdf">
+			<a style="text-decoration:none;" href="http://caseytrees.org/wp-content/uploads/2017/03/iTree-2015-Report_English.pdf">
 				<aside>
 					<div class="content advocate">
 						<img class="whatcanyoudo-img" src="images/itree-full-report.PNG">
@@ -1680,7 +1725,7 @@
 					</div>
 				</aside>
 			</a>
-			<a href="https://caseytreesdc.github.io/treereportcard/">
+			<a style="text-decoration:none;" href="https://caseytreesdc.github.io/treereportcard/">
 				<aside>
 					<div class="content read">
 						<img class="whatcanyoudo-img" src="images/tree-report-card.PNG">
@@ -1693,7 +1738,7 @@
 					</div>
 				</aside>
 			</a>
-			<a href="https://design.itreetools.org/" target="_blank">
+			<a style="text-decoration:none;" href="https://design.itreetools.org/" target="_blank">
 				<aside>
 					<div class="content itree">
 						<img class="whatcanyoudo-img" src="images/itree-measure.png">
@@ -1706,7 +1751,7 @@
 					</div>
 				</aside>
 			</a>
-			<a href="https://caseytrees.org/give/membership/">
+			<a style="text-decoration:none;" href="https://caseytrees.org/give/membership/">
 				<aside>
 					<div class="content member">
 						<img class="whatcanyoudo-img" src="images/become-a-member-2.PNG">
